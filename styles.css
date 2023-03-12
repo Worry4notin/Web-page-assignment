@@ -7,13 +7,20 @@ body{
 .container{
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-template-rows: 100px auto 100 px;
+    grid-template-rows: auto auto 100;
 }
 
 header{
     background-color: rgb(0, 0, 0);
     grid-column-start: 1;
     grid-column-end: 5;
+
+}
+
+.nestedheader{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100 1fr;
 }
 
 main{
@@ -25,8 +32,14 @@ main{
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2,1fr);
-    margin: 10px;
+    background-color: white;
     gap: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.nested > div {
+    background-color: rgb(171, 164, 164);
 }
 
 aside{
