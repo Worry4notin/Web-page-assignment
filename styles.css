@@ -52,6 +52,7 @@ header{
     grid-column-end: 5;
     grid-row-start:2;
     grid-row-end: 3;
+    background: white;
 }
 
 .banner > img{
@@ -63,6 +64,7 @@ main{
     grid-column-end: 5;
     grid-row-start:3;
     grid-row-end: 4;
+    background: black;
 }
 
 .nested{
@@ -70,17 +72,15 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,1fr);
     background-color: white;
-    gap: 10px;
-    padding: 10px;
-    margin: 10px;
+    column-gap: 20px;
+    row-gap: 5px;
+    padding-left: 120px;
+    padding-right: 170px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.nested > div {
-    background-color: rgb(171, 164, 164);
-}
-
-.nested > img {
-    height: 100%;
+.nested > a img {
     width: 100%;
 }
 
@@ -89,6 +89,14 @@ aside{
     grid-column-end: 2;
     grid-row-start:3;
     grid-row-end: 4;
+    background-color: black;
+    
+}
+
+aside > img {
+    width: 100%;
+    padding-top: 73px;
+    background-color: white;
 }
 
 footer{
